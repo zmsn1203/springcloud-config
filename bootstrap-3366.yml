@@ -1,0 +1,29 @@
+
+server:
+  port: 3366
+
+spring:
+  application:
+    name: springcloud-config-consumer
+  #rabbitmq配置 15672是web管理界面端口，5672是mq访问端口
+  rabbitmq:
+    host: 192.168.1.2
+    port: 5672
+    username: guest
+    password: guest
+
+#服务注册到eureka地址
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka-7001.com:7001/eureka/
+
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+info:
+  hello: "我是3366github上的info信息"
