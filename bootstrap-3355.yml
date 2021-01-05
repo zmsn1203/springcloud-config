@@ -24,3 +24,6 @@ management:
     web:
       exposure:
         include: "*"
+
+info:
+  hello: "我是github上的配置文件信息"
